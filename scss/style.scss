@@ -1,3 +1,20 @@
+$color__black: #262626;
+$color__light: #ffffff;
+@mixin main-text {
+  font-size: 17px;
+  line-height: 27px;
+}
+@mixin button {
+  width: 200px;
+  height: 55px;
+  font-size: 20px;
+  line-height: 23px;
+  color: $color__light;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 16px 0;
+  text-align: center;
+  border: 1px solid transparent;
+}
 @font-face {
   font-family: "Raleway";
   src: url("../font/RalewayBold.eot");
@@ -39,4 +56,67 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  .wrapper {
+    background: url(../img/BG.png) no-repeat center center;
+    background-size: cover;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: $color__black;
+    padding: 50px 0 70px;
+    &__scrollWraper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      cursor: pointer;
+    }
+    &__header {
+      font-weight: 900;
+      font-size: 60px;
+      line-height: 70px;
+      margin-bottom: 15px;
+    }
+    &__description {
+      @include main-text();
+      margin-bottom: 28px;
+    }
+    &__button {
+      @include button();
+      background: #ff6033;
+      cursor: pointer;
+      &:hover {
+        background: transparent;
+        color: #ff6033;
+        border-color: #ff6033;
+      }
+    }
+    .justify-center-vertical {
+      margin: auto 0;
+    }
+    &__list {
+      text-transform: uppercase;
+      list-style: none;
+      display: flex;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 27px;
+      &__item {
+        border-top: 3px solid transparent;
+        cursor: pointer;
+        &:not(:first-child) {
+          margin-left: 36px;
+        }
+        &--active {
+          border-top: 3px solid #ff6033;
+        }
+      }
+    }
+  }
 }
