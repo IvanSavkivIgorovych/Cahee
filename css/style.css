@@ -29,7 +29,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
 }
-body .wrapper {
+body .wrapper__header {
   background: url(../img/BG.png) no-repeat center center;
   background-size: cover;
 }
@@ -95,5 +95,29 @@ body .header__list__item:not(:first-child) {
 }
 body .header__list__item--active {
   border-top: 3px solid #ff6033;
+}
+body .wrapper__about {
+  background-color: #01bdbd;
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 27px;
+}
+body .wrapper__about .flexible {
+  display: flex;
+  align-items: center;
+}
+body .wrapper__about .flexible .about__header {
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 106px;
+}
+body .wrapper__about .flexible .about__imgWrap {
+  width: 60%;
+}
+body .wrapper__about .flexible .about__headerWrap {
+  width: 40%;
+}
+body .wrapper__about .flexible .about__info {
+  margin-bottom: 14px;
 }
 /*# sourceMappingURL=style.css.map */

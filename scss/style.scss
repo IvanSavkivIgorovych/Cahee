@@ -61,7 +61,7 @@ $color__light: #ffffff;
 body {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
-  .wrapper {
+  .wrapper__header {
     background: url(../img/BG.png) no-repeat center center;
     background-size: cover;
   }
@@ -115,6 +115,31 @@ body {
         }
         &--active {
           border-top: 3px solid #ff6033;
+        }
+      }
+    }
+  }
+  .wrapper__about {
+    background-color: #01bdbd;
+    color: $color__light;
+    @include main-text();
+    .flexible {
+      display: flex;
+      align-items: center;
+      .about {
+        &__header {
+          font-weight: bold;
+          font-size: 90px;
+          line-height: 106px;
+        }
+        &__imgWrap {
+          width: 60%;
+        }
+        &__headerWrap {
+          width: 40%;
+        }
+        &__info {
+          margin-bottom: 14px;
         }
       }
     }
