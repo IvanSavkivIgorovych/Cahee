@@ -173,4 +173,145 @@ body .wrapper__about .flexible .about__headerWrap {
 body .wrapper__about .flexible .about__info {
   margin-bottom: 14px;
 }
+
+body .wrapper__contact {
+  background: url(../img/BG3.png) no-repeat center center;
+  background-size: cover;
+}
+
+body .contact {
+  color: #262626;
+  text-align: center;
+  padding: 92px 0;
+}
+
+body .contact__header {
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 106px;
+  margin-bottom: 30px;
+}
+
+body .contact__description {
+  margin: 0 auto;
+  max-width: 346px;
+  font-size: 17px;
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+
+body .contact input,
+body .contact textarea {
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  border: none;
+  background: rgba(0, 196, 196, 0.5);
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  padding: 16px 22px;
+}
+
+body .contact input::-webkit-input-placeholder,
+body .contact textarea::-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+body .contact input:-ms-input-placeholder,
+body .contact textarea:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+body .contact input::-ms-input-placeholder,
+body .contact textarea::-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+body .contact input::placeholder,
+body .contact textarea::placeholder {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+body .contact input:focus,
+body .contact textarea:focus {
+  border-left: 5px solid #355b82;
+  outline: none;
+  padding-left: 17px;
+  background: #00c4c4;
+}
+
+body .contact__message {
+  resize: none;
+}
+
+body .contact input.contact__submit {
+  width: 50%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+body .contact input.contact__submit:focus, body .contact input.contact__submit:hover {
+  background: #00c4c4;
+}
+
+body .contact__contact {
+  text-transform: uppercase;
+}
+
+body .contact__contact, body .contact__info {
+  font-size: 17px;
+  line-height: 25px;
+  text-align: left;
+}
+
+body .contact__info {
+  font-weight: 400;
+}
+
+body .contact__info:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+body .footer {
+  padding: 30px 20px;
+  background: #262626;
+  font-size: 16px;
+  line-height: 19px;
+  color: #b9b9b9;
+}
+
+body .footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .footer__link {
+  display: inline-block;
+}
+
+body .footer__info > span {
+  font-weight: bold;
+  color: #ff2b58;
+}
 /*# sourceMappingURL=style.css.map */
