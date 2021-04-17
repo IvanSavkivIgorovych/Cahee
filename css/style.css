@@ -34,11 +34,6 @@ body {
   font-weight: 300;
 }
 
-body .sticky {
-  position: fixed;
-  top: 0;
-}
-
 body a {
   color: inherit;
   text-decoration: none;
