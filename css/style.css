@@ -22,6 +22,45 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "svgfont";
+  src: url("svgfont.eot");
+  src: local("icomoon"), url("../font/svgfont.eot?#iefix") format("embedded-opentype"), url("../font/svgfont.woff2") format("woff2"), url("../font/svgfont.woff") format("woff"), url("../font/svgfont.ttf") format("truetype"), url("../font/svgfont.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "svgfont" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Carrot:before {
+  content: "\e900";
+}
+
+.icon-Cart:before {
+  content: "\e901";
+}
+
+.icon-Planet:before {
+  content: "\e902";
+}
+
+.icon-Plant:before {
+  content: "\e903";
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -32,6 +71,12 @@
 body {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
+}
+
+body h2 {
+  font-size: 90px;
+  line-height: 106px;
+  font-weight: bold;
 }
 
 body a {
@@ -75,7 +120,6 @@ body .header__scrollWraper {
 }
 
 body .header__header {
-  font-weight: 900;
   font-size: 60px;
   line-height: 70px;
   margin-bottom: 15px;
@@ -156,12 +200,6 @@ body .wrapper__about .flexible {
           align-items: center;
 }
 
-body .wrapper__about .flexible .about__header {
-  font-weight: bold;
-  font-size: 90px;
-  line-height: 106px;
-}
-
 body .wrapper__about .flexible .about__imgWrap {
   width: 60%;
 }
@@ -186,9 +224,6 @@ body .contact {
 }
 
 body .contact__header {
-  font-weight: bold;
-  font-size: 90px;
-  line-height: 106px;
   margin-bottom: 30px;
 }
 
@@ -284,6 +319,83 @@ body .contact__info {
 
 body .contact__info:not(:last-child) {
   margin-bottom: 16px;
+}
+
+body .services {
+  background: url(../img/Tomatoes.png) no-repeat 75% center, #70bfff;
+  padding: 165px 0;
+}
+
+body .services__header {
+  color: #ffffff;
+}
+
+body .services .vcenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .services__list {
+  list-style: none;
+}
+
+body .services__list__link {
+  display: inline-block;
+  padding: 23px 18px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  width: 300px;
+  color: #262626;
+}
+
+body .services__list__link + i {
+  font-size: 42px;
+  cursor: pointer;
+  text-align: center;
+  color: #262626;
+  min-width: 100px;
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-left: 1px solid #9d9d9d;
+}
+
+body .services__list__item {
+  max-width: 400px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #fff;
+  min-height: 100px;
+  -webkit-filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
+}
+
+body .services__list__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 body .footer {
