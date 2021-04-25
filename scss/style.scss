@@ -14,6 +14,7 @@ $color__light: #ffffff;
   padding: 16px 0;
   text-align: center;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 @font-face {
   font-family: "Raleway";
@@ -142,7 +143,6 @@ body {
     &__button {
       @include button();
       background: #ff6033;
-      cursor: pointer;
       &:hover {
         background: transparent;
         color: #ff6033;
@@ -313,6 +313,45 @@ body {
         &:not(:last-child) {
           margin-bottom: 20px;
         }
+      }
+    }
+  }
+  .gallery {
+    .imgWrapper {
+      margin-bottom: 50px;
+    }
+    color: $color__black;
+    text-align: center;
+    background: #ffe92f;
+    padding: 84px 0 142px;
+    .vertical__stretch > div:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    .vertical__stretch {
+      height: 100%;
+    }
+    &__header {
+      margin-bottom: 30px;
+    }
+    &__info {
+      max-width: 620px;
+      margin: 0 auto 50px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
+    }
+    &__button {
+      @include button();
+      background: #5585a2;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+      border: 1px solid transparent;
+      font-weight: 300;
+      &:hover {
+        border-color: #5585a2;
+        background-color: #fff;
+        color: #5585a2;
       }
     }
   }
