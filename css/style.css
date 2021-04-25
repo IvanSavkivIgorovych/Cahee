@@ -457,6 +457,93 @@ body .gallery__button:hover {
   color: #5585a2;
 }
 
+body .subscribe {
+  background: url(../img/BG2.png) no-repeat center center;
+  background-size: contain;
+  color: #262626;
+  padding: 144px 0;
+}
+
+body .subscribe__header {
+  font-size: 40px;
+  line-height: 47px;
+  margin-bottom: 20px;
+}
+
+body .subscribe__info {
+  font-size: 17px;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+body .subscribe__email {
+  padding: 18px 15px 19px;
+  border-radius: none;
+  border: 1px solid #262626;
+}
+
+body .subscribe__email::-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+body .subscribe__email:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+body .subscribe__email::-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+body .subscribe__email::placeholder {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+body .subscribe__button {
+  width: 200px;
+  min-height: 55px;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 16px 0;
+  text-align: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: #96b92c;
+  font-weight: 300;
+  line-height: 23px;
+  margin-left: 30px;
+}
+
+body .subscribe__button:hover {
+  background: #fff;
+  border: 1px solid #96b92c;
+  color: #96b92c;
+}
+
+body .subscribe__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 body .footer {
   padding: 30px 20px;
   background: #262626;
