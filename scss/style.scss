@@ -16,6 +16,12 @@ $color__light: #ffffff;
   border: 1px solid transparent;
   cursor: pointer;
 }
+@mixin blogImg {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 310px;
+}
 @font-face {
   font-family: "Raleway";
   src: url("../font/RalewayBold.eot");
@@ -397,6 +403,111 @@ body {
     &__form {
       display: flex;
       align-items: center;
+    }
+  }
+
+  .blog {
+    background: #b07cf7;
+    color: #fff;
+    padding: 92px 0;
+    &__header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    &__info {
+      max-width: 590px;
+      margin: 0 auto;
+      text-align: center;
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 25px;
+      margin-bottom: 50px;
+    }
+    &__textWrapper {
+      z-index: 2;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px 40px 20px 20px;
+      .filter {
+        position: absolute;
+        bottom: 0;
+        top: 50%;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.9) 100%
+        );
+        z-index: -1;
+      }
+      &__header {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 10px;
+      }
+      &__info {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 15px;
+      }
+      &__first {
+        @include blogImg();
+        background-image: url(../img/thumbnail.png);
+      }
+      &__second {
+        @include blogImg();
+        background-image: url(../img/thumbnail-1.png);
+      }
+      &__third {
+        @include blogImg();
+        background-image: url(../img/thumbnail-2.png);
+      }
+    }
+    &__date {
+      background: rgba(38, 38, 38, 0.5);
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      text-align: center;
+      width: 60px;
+      height: 60px;
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 19px;
+      &__bold {
+        font-weight: 900;
+        font-size: 21px;
+        line-height: 15px;
+      }
+    }
+    &__button {
+      @include button();
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 23px;
+      text-transform: uppercase;
+      background: #f72b3b;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+      display: block;
+      margin: 0 auto;
+      &:hover {
+        background: #fff;
+        color: #f72b3b;
+        border-color: #f72b3b;
+      }
+    }
+    .wrapper {
+      margin-bottom: 50px;
     }
   }
 
