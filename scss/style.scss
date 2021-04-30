@@ -190,6 +190,9 @@ body {
       .about {
         &__imgWrap {
           width: 60%;
+          img {
+            width: 100%;
+          }
         }
         &__headerWrap {
           width: 40%;
@@ -531,3 +534,4 @@ body {
     }
   }
 }
+@import "adaptive";
