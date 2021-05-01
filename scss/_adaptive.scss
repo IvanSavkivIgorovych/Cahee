@@ -57,6 +57,42 @@ $xs: 575.98px;
   .mb-4 {
     margin-bottom: 0;
   }
+  .header,
+  body .contact__contact,
+  body .contact__info {
+    text-align: center;
+  }
+  body .contact__contact,
+  body .contact__info {
+    color: darken(#262626, 30%);
+  }
+  body .wrapper__header {
+    background: none;
+  }
+  body .subscribe,
+  body .gallery,
+  body .blog,
+  body .contact {
+    padding: 40px 0;
+  }
+  .contact form {
+    margin-bottom: 30px;
+  }
+  body .contact input.contact__submit {
+    width: 100%;
+  }
+  body .contact__header {
+    font-size: 60px;
+  }
+  body .footer .container {
+    flex-direction: column;
+  }
+  body .footer__link {
+    order: 1;
+  }
+  body .footer__info {
+    margin-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: $xs) {
