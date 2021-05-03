@@ -370,6 +370,13 @@ body {
           -ms-flex-pack: center;
           justify-content: center;
           border-left: 1px solid #9d9d9d;
+          // For IE11
+          &:after {
+            content: "";
+            display: inline-block;
+            min-height: 100px;
+            visibility: hidden;
+          }
         }
       }
       &__item {
