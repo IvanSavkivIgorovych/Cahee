@@ -160,7 +160,37 @@
         <div class="imgWrapper">
           <div class="row mb-md-4">
             <div class="col-12 col-md-8">
-              <img class="gallery__photo" src="img/Image-5.jpg" alt="Image1" />
+              <picture>
+                <source
+                  media="(max-width: 576px)"
+                  srcset="
+                    img/Image-5-537w.png,
+                    img/Image-5-537w@2x.png 2x,
+                    img/Image-5-537w@3x.png 3x
+                  "
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="
+                    img/Image-5-515w.png,
+                    img/Image-5-515w@2x.png 2x,
+                    img/Image-5-515w@3x.png 3x
+                  "
+                />
+                <source
+                  media="(max-width: 991px)"
+                  srcset="
+                    img/Image-5-455w.png,
+                    img/Image-5-455w@2x.png 2x,
+                    img/Image-5-455w@3x.png 3x
+                  "
+                />
+                <img
+                  class="gallery__photo"
+                  src="img/Image-5.jpg"
+                  alt="Image1"
+                />
+              </picture>
             </div>
             <div class="col-12 col-md-4">
               <div class="row vertical__stretch">
@@ -175,10 +205,38 @@
           </div>
           <div class="row">
             <div class="col-12 col-md-6">
-              <img src="img/Image-2.jpg" alt="Image4" />
+              <img
+                srcset="
+                  img/Image-2-250w.png 250w,
+                  img/Image-2-336w.png 336w,
+                  img/Image-2-456w.png 456w,
+                  img/Image-2.jpg      546w
+                "
+                sizes="(max-width: 576px) 250px,
+                      (max-width: 767px) 336px,
+                      (max-width:991px) 456px,
+                      546px
+                      "
+                src="img/Image-2.jpg"
+                alt="blueberries in shake"
+              />
             </div>
             <div class="col-12 col-md-6">
-              <img src="img/Image-1.jpg" alt="Image5" />
+              <img
+                srcset="
+                  img/Image-1-250w.png 250w,
+                  img/Image-1-336w.png 336w,
+                  img/Image-1-456w.png 456w,
+                  img/Image-1.jpg      546w
+                "
+                sizes="(max-width: 576px) 250px,
+              (max-width: 767px) 336px,
+              (max-width:991px) 456px,
+              546px
+              "
+                src="img/Image-1.jpg"
+                alt="yellow tomato"
+              />
             </div>
           </div>
         </div>
